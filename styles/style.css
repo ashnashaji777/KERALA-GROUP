@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #DFB78C;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 80px; /* Set max height to prevent overflow */
+    max-width: 250px; /* Set max width for scaling */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Ensures the image scales properly without distortion */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@600&display=swap');
+
+.logo span {
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;  /* Slightly increased for emphasis */
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Elegant & Premium Look */
+    letter-spacing: 1px; /* Enhances readability */
+}
+
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #DFB78C;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffcc00;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .logo img {
+        max-height: 65px;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #0A3D62;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Adjust Logo for Smaller Screens */
+    .logo img {
+        max-height: 55px;
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        max-height: 50px;
+        max-width: 160px;
+    }
+}
+
+
+.history-section {
+    background: #F8F9FA; /* Light teal color matching the theme */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.history-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.history-section h2 {
+    font-size: 2rem;
+    color: black; /* Dark green color for contrast */
+    margin-bottom: 15px;
+}
+
+.history-section p {
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .history-section h2 {
+        font-size: 1.8rem;
+    }
+    .history-section p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .history-section {
+        padding: 30px 15px;
+    }
+    .history-section h2 {
+        font-size: 1.5rem;
+    }
+    .history-section p {
+        font-size: 0.9rem;
+    }
+}
+
+.values-section {
+    background: #88898b; /* Dark green background */
+    color:black;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.values-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.values-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.value-box {
+    background: #C19A6B; /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.value-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.value-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.value-box:hover {
+    background: #B8860B;
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+    .value-box {
+        padding: 15px;
+    }
+    .values-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .values-section {
+        padding: 30px 15px;
+    }
+    .values-section h2 {
+        font-size: 1.5rem;
+    }
+    .value-box h3 {
+        font-size: 1.3rem;
+    }
+    .value-box p {
+        font-size: 0.95rem;
+    }
+}
+/* Header Styles */
+header {
+    position: relative; /* Ensure header has a stacking context */
+    z-index: 1000; /* Set a high z-index to place it above the slider */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute; /* Ensure dropdown is positioned relative to its parent */
+    z-index: 1100; /* Higher than the header and slider */
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+/* Slider Section */
+.slider-container {
+    position: relative; /* Ensure the slider has its own stacking context */
+    z-index: 1; /* Lower z-index than the header and dropdowns */
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    background: #B8860B;
+    color: black;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-contact .address {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-logo img {
+        margin-bottom: 15px;
+    }
+    .footer-contact {
+        text-align: center;
+    }
+    .footer-contact .address {
+        justify-content: center;
+    }
+}

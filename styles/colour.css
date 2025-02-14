@@ -1,0 +1,94 @@
+/* Styling the career openings section */
+.career-openings {
+    
+    background-color: #e0d9d9;
+   color:#B8860B ;
+   padding: 40px 20px;
+   text-align: center;
+ }
+ 
+ /* Career heading styling with 3D effect */
+ .career-heading {
+   font-size: 3rem; /* Larger font size for 3D effect */
+   font-weight: bold;
+   margin-bottom: 20px;
+   position: relative;
+   text-transform: uppercase;
+   color: #B8860B;
+   text-shadow: 
+     1px 1px 0px #ffc107, /* Light shadow for 3D */
+     2px 2px 0px white,
+     3px 3px 0px hsl(250, 85%, 11%),
+     
+     5px 5px 5px black; /* Deeper shadow for depth */
+ }
+ 
+ /* Links container */
+ .career-links {
+   display: flex;
+   flex-wrap: wrap; /* Allows wrapping on smaller screens */
+   justify-content: center;
+   gap: 10px; /* Space between the links */
+   color: #ffc107;
+   margin-top: 20px;
+ }
+ 
+ /* Styling for the links */
+ .career-link {
+   color: black;
+   font-size: 1.1rem;
+   text-decoration: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   background-color: transparent; /* Ensure links have a base style */
+   
+ }
+ 
+ /* Hover effect for the links */
+ .career-link:hover {
+   background-color: #ffc107; /* Highlight on hover */
+   color: black; /* Contrast color on hover */
+ }
+ .career-link-page {
+   color: #ffc107;
+   font-size: 1.1rem;
+   text-decoration: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   background-color: transparent; /* Ensure links have a base style */
+   
+ }
+ 
+ /* Responsiveness */
+ @media (max-width: 768px) {
+   .career-heading {
+     font-size: 2.5rem; /* Adjust heading size for tablets */
+   }
+ 
+   .career-links {
+     gap: 5px; /* Reduce space between links */
+   }
+ 
+   .career-link {
+     font-size: 1rem; /* Adjust font size for links */
+     padding: 8px 16px; /* Adjust padding for smaller screens */
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .career-heading {
+     font-size: 2rem; /* Further reduce heading size for small screens */
+   }
+ 
+   .career-links {
+     gap: 5px; /* Keep a minimal gap */
+   }
+ 
+   .career-link {
+     font-size: 0.9rem; /* Further reduce font size for links */
+     padding: 6px 12px; /* Reduce padding for compact links */
+   }
+ }
+ 

@@ -1,0 +1,310 @@
+
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #004d40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.investment-details {
+    padding: 20px;
+    border-radius: 10px;
+    background: #e8f5e9;
+    margin-bottom: 20px;
+}
+
+.investment-details h3 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.investment-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.investment-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.investment-table th {
+    background: #004d40;
+    color: white;
+    padding: 15px;
+}
+
+.investment-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.investment-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background: #e8f5e9;
+    border-radius: 10px;
+}
+
+.contact-info a {
+    color: #004d40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .investment-table th, .investment-table td {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.investment-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.investment-text {
+    flex: 1;
+}
+
+.investment-text h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.investment-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.investment-text li {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.investment-image {
+    flex: 1;
+    text-align: right;
+}
+
+.investment-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .investment-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .investment-image {
+        text-align: center;
+    }
+}
+.investment-table-section {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.investment-table-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.investment-table-section h2 {
+    font-size: 2rem;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+.investment-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.investment-table th, .investment-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.investment-table th {
+    background: #C19A6B;
+    color: black;
+}
+
+.investment-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .investment-table th, .investment-table td {
+        padding: 10px;
+    }
+    .investment-table-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .investment-table table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .investment-table-section h2 {
+        font-size: 1.5rem;
+    }
+}
+.contact-info-section {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info-section .container2 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info-section h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    background: #C19A6B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-box p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-box a {
+    color: rgba(15, 15, 95, 0.867);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-box {
+        padding: 15px;
+    }
+    .contact-info-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-info-section {
+        padding: 30px 15px;
+    }
+    .contact-info-section h2 {
+        font-size: 1.5rem;
+    }
+    .contact-box p {
+        font-size: 1rem;
+    }
+}
